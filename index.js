@@ -1,14 +1,14 @@
-const contentLetterSrart_actived = "Happy birthday V.N.Kim.Giau" //Lời mở đầu cho bức thư
-const mainContentLetter = "Tuổi mới chúc Kim Giàu có nhiều cột mốc đáng nhớ trong cuộc sống. Luôn vui vẻ, yêu đời, hài hước, Code ko bug." //Nội dung của bức thư
+const contentLetterSrart_actived = "Happy birthday V.N.Kim.Giau" 
+const mainContentLetter = "Tuổi mới chúc Kim Giàu có nhiều cột mốc đáng nhớ trong cuộc sống. Luôn vui vẻ, yêu đời, hài hước, Code ko bug." 
 
 // Gắn 1 đường link ảnh bất kì
-let imgStart = document.querySelector(".myAI"); //Hình ảnh xuất hiện trong lời mở đầu của bức thư
+let imgStart = document.querySelector(".myAI"); 
 imgStart.src = "./img/IMG1.jpg";
 
 
 const splitContentLetterSrart_actived = contentLetterSrart_actived.split("");
 
-document.querySelector(".sticker").addEventListener("click", function () { //Hiệu ứng gõ chữ cho phần mở đầu của bức thư
+document.querySelector(".sticker").addEventListener("click", function () { 
     document.querySelector(".contentLetter").innerHTML = "";
     document.querySelector(".startLetter").classList.add("active")
     setTimeout(() => {
@@ -25,7 +25,7 @@ document.querySelector(".sticker").addEventListener("click", function () { //Hi�
     }, 1000)
 })
 
-document.querySelector("#mess").addEventListener("change", function () { //Hiệu ứng gõ chữ cho phần nội dung của bức thư
+document.querySelector("#mess").addEventListener("change", function () { 
     if (this.checked == true) {
         document.querySelector(".content").classList.add("actived")
         const splitMainContentLetter = mainContentLetter.split("");
@@ -64,8 +64,7 @@ document.querySelector(".recieve").addEventListener("click", () => {
     }, 500)
 })
 
-// Animation Drop light _ Tạo hiệu ứng kim tuyến rơi
-//Bạn có thể thiết kế lại để trông chân thật hơn nhé, thiết kế của mình hơi bị cứng và thiếu sự tự nhiên
+// Animation Drop light 
 const getBackground = document.querySelector(".backgroundParty");
 var width = getBackground.offsetWidth;
 var height = getBackground.offsetHeight;
