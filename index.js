@@ -1,4 +1,4 @@
-const contentLetterSrart_actived = "Happy birthday V.N.Kim.Giau" 
+const contentLetterSrart_actived = "Happy birthday V.T.Kim.Giau" 
 const mainContentLetter = "Tuổi mới chúc Kim Giàu có nhiều cột mốc đáng nhớ trong cuộc sống. Luôn vui vẻ, yêu đời, hài hước, đặt biệt là code ko bug." 
 
 // Gắn 1 đường link ảnh bất kì
